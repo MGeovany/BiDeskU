@@ -1,0 +1,18 @@
+
+$rblack: linear-gradient(180deg, rgba(31,32,35,1) 0%, rgba(21,21,23,1) 100%);
+
+body{
+    color: white;
+}
+
+.tcontainer{
+    background-image: $rblack;
+    border-radius: 20px;
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 2rem;
+}
+

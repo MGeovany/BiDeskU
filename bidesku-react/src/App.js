@@ -6,7 +6,10 @@ import Tickets from './pages/Tickets'
 import Alumnos from './pages/Alumnos'
 import Docentes from './pages/Docentes'
 
+
 import './App.scss';
+
+
 
 
 

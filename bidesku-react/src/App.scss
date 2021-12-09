@@ -2,56 +2,71 @@
 
 $wblack: #222222;
 $black: #151517;
+$bselect: #272A30;
 
 *{
     margin:0; 
     padding:0; 
     box-sizing: border-box;
-    font-family: 'Overpass', sans-serif;
-    color: white;
-    font-size: x-large;
-    
 
-  
   }
+
+html{
+    font-size: 22px;
+    font-family: 'Overpass', sans-serif;
+
+} 
 
 body{
     background-color: $black;
 }
-.navbar {
-    padding: 0.2rem 0.25rem;
-    //border-bottom: 1px solid white;
-    background-color: $wblack;
-    display: flex;
-    justify-content: flex-start;
-    
-    height: 3.1rem;
-}
+
 
 .sidebar{
-    width: 12rem;
-    height: calc(100vh - 52px);;
+    width: 19rem;
+    height: calc(100vh - 69px);;
     //border-right: 1px solid white;
     background-color: $wblack;
-    
-    ul{
-        list-style: none;
-        padding: 2rem 2rem;
-        background-color: $wblack;
-
-        li{
-            background-color: $wblack;
-            margin-bottom: 2rem;
-            a, a:visited{
-                text-decoration: none;
-            }
-            a:hover{
-                background-color: #272A30;
-            }
-
-        }
-    }
 }
+
+
+
+.link{
+    display: flex;
+    color: white;
+    margin: 0.5rem 0rem 0.1rem 1rem;
+    border-radius: 20px;
+    width: 85%;
+    height: 60px;
+
+    &:first-child{
+        margin-top: 2.47rem;
+    }
+
+    a{
+        display: flex;
+        text-decoration: none;
+        color:white;
+        padding: 15px;        
+        
+        align-items: center;
+        justify-content: flex-start;
+    } 
+    &:visited{
+        text-decoration: none;
+        color: white;
+    }
+    &:hover{
+        background-color: $bselect;
+    }
+    
+
+    
+}
+
+
+
+
 
 .flex{
     
@@ -59,13 +74,73 @@ body{
 }
 
 
+
+.navbarr {
+    padding: 0rem 0rem;
+    background-color: $wblack;
+    display: flex;
+    height: 3.2rem;
+    justify-content: space-between;
+}
+
+.prof{
+    display: flex;
+    margin: 0 5px;
+}
 .imgg{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
+    
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
-    margin: 0px 0px -20px 0px;
+    margin: 5px 0px -20px 0px;
+}
+.name{
+    color:white
+}
+
+.pp{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+
+    margin: 7px 12px;
+}
+
+.person{
+    //display: flex;
+    
+    
+    font-size: 15px;
+    color: #676767;
+   // flex-direction: row;
+
+    margin: 10px 10px 0 0;
+
+}
+
+span{
+   
+
+    
+}
+
+.name{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.content{
+    margin: 1rem 0 0 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
