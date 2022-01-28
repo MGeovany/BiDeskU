@@ -2,7 +2,7 @@
 const Docentes = () =>{
     return(
         <div className="d">
-            Docentes
+           <h2>Docentes</h2> 
         </div>
     )
 }
