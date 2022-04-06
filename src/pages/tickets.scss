@@ -10,19 +10,30 @@ body{
     border-radius: 20px;
     width: 98%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+  //  padding: 3rem;
+    margin: 2rem;
+    flex-direction: column;
+    
 
-    padding: 3rem;
+}
 
+.cien{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 
-.tcon{
-    display: flex;
-    justify-content: space-evenly;
-    width: 1600px;
+
+.tcontainer{
+    box-shadow: 0px 1px 70px -4px rgba(0,0,0,0.8);
+    height: 690px;
+    width: 690px;
+    background-image: #111;
+
+    padding: 40px;
 }
 
 .tcontainer > input{
@@ -31,4 +42,35 @@ body{
     border: 1px solid rgb(59, 69, 78);
     color: white;
 
+}
+
+
+.col{
+    color: white;
+}
+
+.h{
+    margin-bottom: 30px;
+}
+
+.tabla{
+    font-size: small;
+    width: 100%;
+}
+
+.table-responsive{
+    
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
+.lilb{
+    font-size: small;
+}
+
+.end{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content:flex-end ;
 }

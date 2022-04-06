@@ -1,8 +1,9 @@
 import React from 'react'
 
-import {Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter} from 'reactstrap'
+import {Table, Button, Container} from 'reactstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import FootMove from './FootMove';
 
 const alumno = [
     {id:1, nombre: "Marlon Castro", carrera: "Ingenieria en informatica", celular: "94836857", sede: "Sede Central", correo:"marlongeo1999@gmail.com"},
@@ -10,8 +11,7 @@ const alumno = [
     {id:3, nombre: "Jose Daniel", carrera: "Licenciatura en Diseno", celular: "94836857", sede: "Sede Central", correo:"aprikot@gmail.com"},
     {id:4, nombre: "Selvin Carranza", carrera: "Licenciatura en Psicologia", celular: "94836857", sede: "Sede Central", correo:"canvasCaro@gmail.com"},
     {id:5, nombre: "Alfonso Baldomero", carrera: "Licenciatura en Admon. de Empresas", celular: "94836857", sede: "Sede Central", correo:"1997LMCS@gmail.com"},
-    {id:6, nombre: "Sara Ignacia", carrera: "Ingenieria Logistica", celular: "94836857", sede: "Sede Central", correo:"MMAA&Joel@gmail.com"},
-    {id:7, nombre: "Pedro Sanchez", carrera: "Ingenieria en informatica", celular: "94836857", sede: "Sede Central", correo:"129CC_C@gmail.com"},
+    {id:6, nombre: "Sara Ignacia", carrera: "Ingenieria Logistica", celular: "94836857", sede: "Sede Central", correo:"MMAA&Joel@gmail.com"}
     
 
 ];
@@ -66,6 +66,8 @@ class Alumno extends React.Component{
                             ))}
                             </tbody>
                         </Table>
+
+                        <FootMove/>
                     </Container>
                 </div>
             </div>

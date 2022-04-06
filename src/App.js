@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Dashboard from './pages/Dashboard'
-import Tickets from './pages/Tickets'
+import TicketsC from './pages/TicketsCreados'
 import Alumnos from './pages/Alumnos'
 import Docentes from './pages/Docentes'
 
@@ -23,9 +23,10 @@ function App() {
         <div className="content">
          
           <Route path="/" exact={true} component={Dashboard} />
-          <Route path="/tickets" exact={true} component={Tickets} />
+          <Route path="/tickets" exact={true} component={TicketsC} />
           <Route path="/alumnos" exact={true} component={Alumnos} />
           <Route path="/docentes" exact={true} component={Docentes} />
+          
 
         </div>
       </div>

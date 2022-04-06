@@ -2,7 +2,9 @@ import Chart from 'react-apexcharts'
 import './dash.scss'
 import React from 'react'
 
-import {Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter} from 'reactstrap'
+import {Table} from 'reactstrap'
+import TablaT from './TablaT'
+import FootMove from './FootMove'
 
 
 const chartOptions = {
@@ -17,10 +19,10 @@ const chartOptions = {
 const lines = {
     series: [{
         name: ' Ticket Recibido',
-        data: [40,70,20,90,36,80,30,91,60]
+        data: [40, 70, 45,90,35,60,30,91,40]
     }, {
         name: ' Tickets Resueltos',
-        data: [40, 30, 70, 80, 40, 16, 40, 20, 51, 10]
+        data: [10, 10, 40, 30, 45, 20, 55, 10, 15]
     }],
     options: {
         color: ['#6ab04c', '#2980b9'],
@@ -45,19 +47,17 @@ const lines = {
     }
 }
 const alumno = [
-    {id:10111, nombre: "Marlon Castro", prio: "Alta", sede: "Sede Central", estado:"Pendiente", fecha:"31 de Diciembre"},
-    {id:20222, nombre: "Jhon Doe", prio: "Urgente", sede: "Sede Norte", estado:"Abierto", fecha:"25 de Febrero"},
-    {id:30333, nombre: "Jose Daniel", prio: "Baja", sede: "Sede Central", estado:"Pendiente", fecha:"03 de Enero"},
-    {id:40444, nombre: "Selvin Carranza", prio: "Media", sede: "Sede Central", estado:"Abierto", fecha:"02 de Marzo"},
+    {id:10111, nombre: "Marlon Castro", prio: "Alta", sede: "Sede Central", estado:"Pendiente", fecha:"Dic 31"},
+    {id:20222, nombre: "Jhon Doe", prio: "Urgente", sede: "Sede Norte", estado:"Abierto", fecha:"Feb 25"},
+    {id:30333, nombre: "Jose Daniel", prio: "Baja", sede: "Sede Central", estado:"Pendiente", fecha:"Ene 03"},
+    {id:40444, nombre: "Selvin Carranza", prio: "Media", sede: "Sede Central", estado:"Abierto", fecha:"Mar 02"},
   
 ];
 
 
 
 class Dashboard extends React.Component{
-    state={
-        alumno: alumno
-    }
+
 
     render(){
         return(
@@ -114,45 +114,9 @@ class Dashboard extends React.Component{
                                 <h5>Tickets Recientes</h5>
 
                         
-                                <Table
-                                dark
-                                responsive  
-                                striped>
-                                    <thead>
-                                        <tr>
-                                            <th>Ticket ID</th>
-                                            <th>Solicitante</th>
-                                            <th>Prioridad</th>
-                                            <th>Campus</th>
-                                            <th>Estado</th>
-                                            <th>Fecha</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {this.state.alumno.map((elemento) =>(
-                                            <tr>
-                                                <td>{elemento.id}</td>
-                                                <td>{elemento.nombre}</td>
-                                                <td>{elemento.prio}</td>
-                                                <td>{elemento.sede}</td>
-                                                <td>{elemento.estado}</td>
-                                                <td>{elemento.fecha}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </Table>
+                               <TablaT/>
 
-                                <div className='fooot'>
-                                    <div className='izq'>
-                                       
-                                    </div>
-                                    <div className='der'>
-                                        <span>1</span>
-                                        <span>2</span>
-                                        <span>3</span>
-                                        <a>Ver mas...</a>
-                                    </div>
-                                </div>
+                               <FootMove/>
 
                             </div>
                         </div>

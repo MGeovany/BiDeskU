@@ -23,14 +23,12 @@ body{
     background-color: #151517;
     box-shadow: 0px 1px 70px -4px rgba(0,0,0,0.8);
     border-radius: 20px;
-    position: relative;
     overflow:hidden;
-    z-index: 1;
     margin-bottom: 30px;
     flex-direction: column;
     font-size: large;
 
-  
+    height: 90%;
 }
 
 .bloque >h4{
@@ -76,6 +74,8 @@ body{
 .fooot{
     display: flex;
     width: 100%;
+
+    flex-direction: row-reverse;
     
 }
 
@@ -84,9 +84,11 @@ body{
 }
 
 .der{
-    width: 38%;
+    width: 281px;
     display: flex;
     justify-content: space-evenly;
+
+
 }
 
 .der>span{
@@ -97,6 +99,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #333;
+    margin-bottom: 15px;
     
 }
 .der>span:hover{

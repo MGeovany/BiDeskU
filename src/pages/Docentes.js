@@ -1,8 +1,14 @@
 
+import { Links } from "../components/Links"
+
 const Docentes = () =>{
+
+
+    
+
     return(
         <div className="d">
-           <h2>Docentes</h2> 
+           <Links />
         </div>
     )
 }
